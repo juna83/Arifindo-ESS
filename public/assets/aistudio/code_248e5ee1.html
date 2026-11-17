@@ -1,0 +1,590 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"inverse-on-surface":"#f0f1f3","on-primary-fixed":"#410007","on-background":"#191c1e","on-secondary-fixed-variant":"#3a485c","secondary":"#515f74","on-primary-container":"#ffdad8","secondary-fixed":"#d5e3fd","surface-variant":"#e1e2e4","surface-container-lowest":"#ffffff","inverse-surface":"#2e3132","error":"#ba1a1a","on-error":"#ffffff","on-error-container":"#93000a","surface-tint":"#bf0229","error-container":"#ffdad6","on-primary-fixed-variant":"#92001c","primary-fixed":"#ffdad8","primary":"#9e001f","surface-container":"#edeef0","surface":"#f8f9fb","on-tertiary-fixed":"#001f28","surface-dim":"#d9dadc","tertiary-fixed":"#b6ebff","tertiary-fixed-dim":"#82d1ed","outline-variant":"#e5bdbb","surface-container-high":"#e7e8ea","on-primary":"#ffffff","surface-container-low":"#f2f4f6","on-tertiary-container":"#b6ebff","secondary-container":"#d5e3fd","on-secondary-container":"#57657b","surface-bright":"#f8f9fb","on-secondary-fixed":"#0d1c2f","on-tertiary":"#ffffff","primary-container":"#c8102e","on-tertiary-fixed-variant":"#004e60","inverse-primary":"#ffb3b1","tertiary":"#005468","outline":"#906f6e","secondary-fixed-dim":"#b9c7e0","on-secondary":"#ffffff","primary-fixed-dim":"#ffb3b1","tertiary-container":"#006e87","background":"#f8f9fb","surface-container-highest":"#e1e2e4","on-surface":"#191c1e","on-surface-variant":"#5c403f"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-md":"1rem","gutter":"1.25rem","space-xl":"2rem","margin":"1.5rem","space-xs":"0.25rem","space-lg":"1.5rem","space-sm":"0.5rem","gutter-dense":"0.75rem","margin-mobile":"1rem"},"fontFamily":{"table-header":["Inter"],"caption":["Inter"],"label-badge":["Inter"],"display-kpi":["Plus Jakarta Sans"],"headline-h1":["Plus Jakarta Sans"],"body-medium":["Inter"],"body-default":["Inter"],"headline-h1-mobile":["Plus Jakarta Sans"],"headline-h2":["Plus Jakarta Sans"],"title-card":["Plus Jakarta Sans"],"table-data":["Inter"]},"fontSize":{"table-header":["12px",{"lineHeight":"16px","letterSpacing":"0.05em","fontWeight":"600"}],"caption":["12px",{"lineHeight":"16px","fontWeight":"400"}],"label-badge":["12px",{"lineHeight":"16px","fontWeight":"600"}],"display-kpi":["32px",{"lineHeight":"40px","fontWeight":"800"}],"headline-h1":["26px",{"lineHeight":"34px","fontWeight":"800"}],"body-medium":["15px",{"lineHeight":"22px","fontWeight":"500"}],"body-default":["15px",{"lineHeight":"22px","fontWeight":"400"}],"headline-h1-mobile":["22px",{"lineHeight":"28px","fontWeight":"800"}],"headline-h2":["20px",{"lineHeight":"28px","fontWeight":"700"}],"title-card":["16px",{"lineHeight":"24px","fontWeight":"700"}],"table-data":["14px",{"lineHeight":"20px","fontWeight":"400"}]}}}};</script></head><body class="bg-background font-body-default text-body-default text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="logo-arifindo.png" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrAJ7HoT1aWOEc6oVKZqldaj1Dm4AP6v2zoIC5id-7vYSeJHwaQt0EoC31mAJ48TJoVtxv3jdHKF4qM3Tak0xJFjFcTO3ygCvLR1eXj1yUslKYhFY0csw8_rqVUyA9ha9fxDcCvs5R5PcnUkMU2gDaK-FJiIUtV1MxerAo7i4KQ0jBKd7EoPBM73xNotC5lva00Zq6UnGdp23HzaEWnh5PTP5Xxyf_RJ7SMKTjLPVG7m8GDxmkFUO2Hxyuwn"><div class="flex flex-col"><span class="text-[11px] font-semibold tracking-wider uppercase text-secondary leading-tight"><span style="color: rgb(158, 0, 31); font-family: &quot;Plus Jakarta Sans&quot;; font-size: 20px; letter-spacing: -0.5px; text-transform: none; background-color: rgba(248, 249, 251, 0.8);">ARIFINDOne</span></span><h1 class="font-title-card text-title-card text-on-surface leading-tight">Dokumen &amp; Slip</h1></div></div><div class="flex items-center gap-space-xs"><button aria-label="Notifikasi" class="relative w-11 h-11 flex items-center justify-center rounded-full text-secondary hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-primary-container ring-2 ring-surface"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full px-margin-mobile pt-16 pb-24 bg-background min-h-screen"><div class="flex flex-col w-full pb-8 space-y-5">
+<!-- Page Header & Subtitle -->
+<div class="flex flex-col px-1 pt-1">
+<div class="flex items-center gap-2 mb-1">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-primary-container text-on-primary text-[16px]">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</span>
+<span class="text-caption font-caption text-secondary font-semibold uppercase tracking-wider">Arsip Resmi Karyawan</span>
+</div>
+<h2 class="font-headline-h2 text-headline-h2 text-on-surface">Dokumen &amp; Slip Gaji</h2>
+
+</div>
+<!-- Search & Filter Bar -->
+<div class="flex items-center gap-2">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-[20px] text-secondary">search</span>
+<input class="w-full h-11 pl-10 pr-3 rounded-xl bg-surface-container-lowest text-on-surface font-body-default text-table-data shadow-sm placeholder:text-secondary focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" id="docSearchInput" placeholder="Cari dokumen, periode, atau sertifikat..." type="search">
+</div>
+<button aria-label="Filter Dokumen" class="w-11 h-11 shrink-0 rounded-xl bg-surface-container-lowest text-secondary shadow-sm flex items-center justify-center active:scale-95 transition-transform hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[22px]">tune</span>
+</button>
+</div>
+<!-- Segmented Category Pill Tabs -->
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar -mx-margin-mobile px-margin-mobile pb-1">
+<button class="tab-pill shrink-0 h-11 px-4 rounded-full font-label-badge text-label-badge bg-primary-container text-on-primary shadow-sm flex items-center gap-1.5 transition-all" data-target="section-slip" type="button">
+<span class="material-symbols-outlined text-[18px]">payments</span>
+<span>Slip Gaji</span>
+</button>
+<button class="tab-pill shrink-0 h-11 px-4 rounded-full font-label-badge text-label-badge bg-surface-container-lowest text-secondary shadow-sm flex items-center gap-1.5 hover:text-on-surface transition-all" data-target="section-pajak" type="button">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+<span>Pajak 1721-A1</span>
+</button>
+<button class="tab-pill shrink-0 h-11 px-4 rounded-full font-label-badge text-label-badge bg-surface-container-lowest text-secondary shadow-sm flex items-center gap-1.5 hover:text-on-surface transition-all" data-target="section-surat" type="button">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+<span>Surat &amp; Paklaring</span>
+</button>
+<button class="tab-pill shrink-0 h-11 px-4 rounded-full font-label-badge text-label-badge bg-surface-container-lowest text-secondary shadow-sm flex items-center gap-1.5 hover:text-on-surface transition-all" data-target="section-kebijakan" type="button">
+<span class="material-symbols-outlined text-[18px]">gavel</span>
+<span>SOP &amp; Kebijakan</span>
+</button>
+<button class="tab-pill shrink-0 h-11 px-4 rounded-full font-label-badge text-label-badge bg-surface-container-lowest text-secondary shadow-sm flex items-center gap-1.5 hover:text-on-surface transition-all" data-target="section-diklat" type="button">
+<span class="material-symbols-outlined text-[18px]">school</span>
+<span>Sertifikat Diklat</span>
+</button>
+</div>
+<!-- Quick Action Request Banner -->
+<div class="relative overflow-hidden rounded-2xl bg-surface-container-lowest p-4 shadow-sm">
+<div class="absolute -right-4 -bottom-6 opacity-5 pointer-events-none text-primary-container select-none">
+<span class="material-symbols-outlined text-[130px]">verified</span>
+</div>
+<div class="relative z-10 flex flex-col gap-3">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center shrink-0 text-primary-container">
+<span class="material-symbols-outlined text-[22px]">post_add</span>
+</div>
+<div class="flex-1 min-w-0">
+<span class="inline-block px-2 py-0.5 rounded-full text-[10px] font-semibold bg-primary-fixed text-primary-container uppercase tracking-wider mb-1">Layanan HCGA</span>
+<h3 class="font-title-card text-title-card text-on-surface leading-snug">Permohonan Surat Keterangan Kerja</h3>
+
+</div>
+</div>
+<button class="w-full h-11 rounded-xl bg-primary-container text-on-primary font-body-medium text-table-data font-semibold flex items-center justify-center gap-2 shadow-sm active:scale-[0.98] transition-transform" id="btnRequestLetter" type="button">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>+ Buat Permohonan Surat</span>
+</button>
+</div>
+</div>
+<!-- SECTION 1: Slip Gaji Bulanan -->
+<section class="flex flex-col space-y-3" id="section-slip">
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">lock</span>
+<h3 class="font-title-card text-title-card text-on-surface">Slip Gaji Bulanan</h3>
+</div>
+<span class="text-caption font-caption text-secondary">Terkunci Enkripsi</span>
+</div>
+<!-- Security Info Banner -->
+<div class="flex items-start gap-2.5 p-3 rounded-xl bg-surface-container text-on-surface">
+<span class="material-symbols-outlined text-primary-container text-[20px] shrink-0 mt-0.5">key</span>
+<p class="font-caption text-caption text-secondary leading-snug">
+<strong class="text-on-surface font-semibold">Slip dilindungi sandi:</strong> Gunakan 6 digit tanggal lahir Anda (<span class="font-mono text-primary-container font-semibold">DDMMYY</span>) untuk membuka file PDF.
+      </p>
+</div>
+<!-- Card 1: November 2026 (Terbaru) -->
+<div class="rounded-2xl bg-surface-container-lowest p-4 shadow-sm flex flex-col space-y-3">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h4 class="font-title-card text-title-card text-on-surface">November 2026</h4>
+<span class="px-2 py-0.5 rounded-full text-[11px] font-semibold bg-tertiary-fixed text-on-tertiary-fixed flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+              Baru Terbit
+            </span>
+</div>
+<span class="font-caption text-caption text-secondary mt-0.5">Periode: 26 Okt - 25 Nov 2026 • Proyek Sipil</span>
+</div>
+<div class="w-9 h-9 rounded-xl bg-surface-container flex items-center justify-center shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[20px]">description</span>
+</div>
+</div>
+<!-- Masked Amount Display -->
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low">
+<div class="flex flex-col">
+<span class="text-[11px] font-medium text-secondary uppercase tracking-wider">Take Home Pay</span>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-display-kpi text-[20px] leading-tight font-extrabold text-on-surface" id="salaryAmount1">Rp ••••••••</span>
+<button aria-label="Tampilkan / Sembunyikan Gaji" class="w-8 h-8 rounded-full flex items-center justify-center text-secondary hover:text-on-surface transition-colors" onclick="toggleSalary('salaryAmount1', 'Rp 14.850.000', this)" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</div>
+<div class="text-right">
+<span class="inline-block px-2 py-0.5 rounded text-[10px] font-medium bg-surface-container text-secondary">AES-256</span>
+<span class="block text-[11px] text-secondary mt-0.5">0x diunduh</span>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="grid grid-cols-2 gap-2 pt-1">
+<button class="h-11 px-3 rounded-xl bg-surface-container text-on-surface font-body-medium text-table-data font-semibold flex items-center justify-center gap-1.5 active:scale-95 transition-transform" onclick="openPreviewModal('Slip Gaji - November 2026', 'Rp 14.850.000', '26 Okt - 25 Nov 2026')" type="button">
+<span class="material-symbols-outlined text-[18px]">lock_open</span>
+<span>Pratinjau</span>
+</button>
+<button class="h-11 px-3 rounded-xl bg-primary-container text-on-primary font-body-medium text-table-data font-semibold flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-transform" onclick="triggerDownload('Slip_Gaji_Nov_2026.pdf')" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Unduh PDF</span>
+</button>
+</div>
+</div>
+<!-- Card 2: Oktober 2026 -->
+<div class="rounded-2xl bg-surface-container-lowest p-4 shadow-sm flex flex-col space-y-3">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h4 class="font-title-card text-title-card text-on-surface">Oktober 2026</h4>
+<span class="px-2 py-0.5 rounded-full text-[11px] font-semibold bg-secondary-fixed text-on-secondary-fixed flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+              Terverifikasi HCGA
+            </span>
+</div>
+<span class="font-caption text-caption text-secondary mt-0.5">Periode: 26 Sep - 25 Okt 2026</span>
+</div>
+<div class="w-9 h-9 rounded-xl bg-surface-container flex items-center justify-center shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[20px]">receipt</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low">
+<div class="flex flex-col">
+<span class="text-[11px] font-medium text-secondary uppercase tracking-wider">Take Home Pay</span>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-display-kpi text-[20px] leading-tight font-extrabold text-on-surface" id="salaryAmount2">Rp ••••••••</span>
+<button aria-label="Tampilkan / Sembunyikan Gaji" class="w-8 h-8 rounded-full flex items-center justify-center text-secondary hover:text-on-surface transition-colors" onclick="toggleSalary('salaryAmount2', 'Rp 14.850.000', this)" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</div>
+<span class="text-[11px] text-secondary">Diunduh 2x</span>
+</div>
+<button class="w-full h-11 rounded-xl bg-surface-container text-on-surface font-body-medium text-table-data font-semibold flex items-center justify-center gap-2 active:scale-95 transition-transform" onclick="triggerDownload('Slip_Gaji_Okt_2026.pdf')" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary-container">lock</span>
+<span>Unduh PDF (Password Protected)</span>
+</button>
+</div>
+<!-- Card 3: September 2026 -->
+<div class="rounded-2xl bg-surface-container-lowest p-4 shadow-sm flex flex-col space-y-3">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h4 class="font-title-card text-title-card text-on-surface">September 2026</h4>
+<span class="px-2 py-0.5 rounded-full text-[10px] font-medium bg-surface-container text-secondary">Arsip</span>
+</div>
+<span class="font-caption text-caption text-secondary mt-0.5">Periode: 26 Agu - 25 Sep 2026&nbsp;&nbsp;</span>
+</div>
+<div class="w-9 h-9 rounded-xl bg-surface-container flex items-center justify-center shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[20px]">receipt</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low">
+<div class="flex flex-col">
+<span class="text-[11px] font-medium text-secondary uppercase tracking-wider">Take Home Pay</span>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-display-kpi text-[20px] leading-tight font-extrabold text-on-surface" id="salaryAmount3">Rp ••••••••</span>
+<button aria-label="Tampilkan / Sembunyikan Gaji" class="w-8 h-8 rounded-full flex items-center justify-center text-secondary hover:text-on-surface transition-colors" onclick="toggleSalary('salaryAmount3', 'Rp 15.200.000', this)" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</div>
+<span class="text-[11px] text-secondary">Diunduh 1x</span>
+</div>
+<button class="w-full h-11 rounded-xl bg-surface-container text-on-surface font-body-medium text-table-data font-semibold flex items-center justify-center gap-2 active:scale-95 transition-transform" onclick="triggerDownload('Slip_Gaji_Sep_2026.pdf')" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Unduh PDF</span>
+</button>
+</div>
+</section>
+<!-- SECTION 2: Bukti Potong Pajak PPh 21 (Formulir 1721-A1) -->
+<section class="flex flex-col space-y-3" id="section-pajak">
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">account_balance</span>
+<h3 class="font-title-card text-title-card text-on-surface">Pajak PPh 21 (1721-A1)</h3>
+</div>
+<span class="text-caption font-caption text-secondary">SPT Tahunan</span>
+</div>
+<!-- Tax Card 2025 -->
+<div class="rounded-2xl bg-surface-container-lowest p-4 shadow-sm flex flex-col space-y-3">
+<div class="flex items-start justify-between gap-2">
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded-full text-[11px] font-semibold bg-tertiary-fixed text-on-tertiary-fixed flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">verified</span>
+              Resmi Terbit DJP &amp; HCGA
+            </span>
+</div>
+<h4 class="font-title-card text-title-card text-on-surface mt-1">Formulir 1721-A1 Tahun 2025</h4>
+<p class="font-caption text-caption text-secondary mt-0.5">
+            Masa Pajak: Januari - Desember 2025 • NPWP Match
+          </p>
+</div>
+<div class="w-10 h-10 rounded-xl bg-secondary-fixed flex items-center justify-center shrink-0 text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[22px]">assignment_turned_in</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low text-[12px] text-secondary">
+<span>KLU: 41011 - Konstruksi Gedung</span>
+<span class="font-semibold text-on-surface">Status: Nihil / Terpotong</span>
+</div>
+<button class="w-full h-11 rounded-xl bg-surface-container text-on-surface font-body-medium text-table-data font-semibold flex items-center justify-center gap-2 active:scale-95 transition-transform" onclick="triggerDownload('Formulir_1721_A1_Th2025.pdf')" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary-container">file_download</span>
+<span>Unduh Bukti Potong (.PDF)</span>
+</button>
+</div>
+<!-- Tax Card 2024 -->
+<div class="rounded-2xl bg-surface-container-lowest p-4 shadow-sm flex flex-col space-y-3">
+<div class="flex items-start justify-between gap-2">
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded-full text-[10px] font-medium bg-surface-container text-secondary">Arsip Terlapor</span>
+</div>
+<h4 class="font-title-card text-title-card text-on-surface mt-1">Formulir 1721-A1 Tahun 2024</h4>
+<p class="font-caption text-caption text-secondary mt-0.5">
+            Masa Pajak: Januari - Desember 2024
+          </p>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[22px]">folder</span>
+</div>
+</div>
+<button class="w-full h-11 rounded-xl bg-surface-container text-secondary font-body-medium text-table-data font-semibold flex items-center justify-center gap-2 active:scale-95 transition-transform hover:text-on-surface" onclick="triggerDownload('Formulir_1721_A1_Th2024.pdf')" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Unduh Arsip (.PDF)</span>
+</button>
+</div>
+</section>
+<!-- SECTION 3: Permohonan Surat Resmi (E-Signed & QR) -->
+<section class="flex flex-col space-y-3" id="section-surat">
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">approval</span>
+<h3 class="font-title-card text-title-card text-on-surface">Surat Resmi Aktif</h3>
+</div>
+<span class="text-caption font-caption text-secondary">E-Signed &amp; QR</span>
+</div>
+<!-- Official Letter Card with QR Stamp Preview -->
+<div class="rounded-2xl bg-surface-container-lowest p-4 shadow-sm flex flex-col space-y-3 relative overflow-hidden">
+<div class="flex items-start justify-between gap-2">
+<div class="flex-1 min-w-0">
+<span class="px-2 py-0.5 rounded-full text-[11px] font-semibold bg-tertiary-fixed text-on-tertiary-fixed inline-flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-[13px]">qr_code_2</span>
+            QR Validasi Aktif
+          </span>
+<h4 class="font-title-card text-title-card text-on-surface leading-snug">Surat Keterangan Kerja Aktif</h4>
+<p class="font-caption text-caption text-secondary mt-0.5">Keperluan: Pengajuan KPR BTN</p>
+</div>
+<!-- Digital Stamp Container -->
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex flex-col items-center justify-center shrink-0 text-primary-container p-1 text-center">
+<span class="material-symbols-outlined text-[24px]">qr_code</span>
+<span class="text-[8px] font-bold tracking-tighter uppercase leading-none">E-SIGN</span>
+</div>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low space-y-1 text-table-data text-secondary">
+<div class="flex items-center justify-between">
+<span class="text-[12px]">Nomor Dokumen:</span>
+<span class="font-mono text-[12px] font-semibold text-on-surface">038/ARF-HCGA/SK/XI/2026</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-[12px]">Tanggal Terbit:</span>
+<span class="text-[12px] text-on-surface">18 Nov 2026</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-[12px]">Penandatangan:</span>
+<span class="text-[12px] font-medium text-on-surface">Budi Santoso (HCGA Dir.)</span>
+</div>
+</div>
+<button class="w-full h-11 rounded-xl bg-primary-container text-on-primary font-body-medium text-table-data font-semibold flex items-center justify-center gap-2 shadow-sm active:scale-95 transition-transform" onclick="triggerDownload('SK_Kerja_KPR_038_XI_2026.pdf')" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Unduh PDF (Validasi QR)</span>
+</button>
+</div>
+</section>
+<!-- SECTION 4: SOP & Kebijakan Perusahaan -->
+<section class="flex flex-col space-y-3" id="section-kebijakan">
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">policy</span>
+<h3 class="font-title-card text-title-card text-on-surface">Kebijakan &amp; SOP</h3>
+</div>
+<span class="text-caption font-caption text-secondary">Read Status</span>
+</div>
+<!-- PP Document Card -->
+<div class="rounded-2xl bg-surface-container-lowest p-4 shadow-sm flex flex-col space-y-3">
+<div class="flex items-start justify-between gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[22px]">menu_book</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-secondary-fixed text-on-secondary-fixed flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">done_all</span>
+              Sudah Dibaca (12 Jan 2025)
+            </span>
+</div>
+<h4 class="font-title-card text-title-card text-on-surface mt-1 leading-snug">Peraturan Perusahaan (PP) 2025–2027</h4>
+<p class="font-caption text-caption text-secondary mt-0.5">PT. Arifindo Adiputra Ariaguna</p>
+</div>
+</div>
+<button class="w-full h-11 rounded-xl bg-surface-container text-on-surface font-body-medium text-table-data font-semibold flex items-center justify-center gap-2 active:scale-95 transition-transform" onclick="openDocumentViewer('Peraturan Perusahaan 2025–2027')" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+<span>Baca Dokumen</span>
+</button>
+</div>
+<!-- K3 SOP Card with Action Needed Badge -->
+<div class="rounded-2xl bg-surface-container-lowest p-4 shadow-sm flex flex-col space-y-3">
+<div class="flex items-start justify-between gap-3">
+<div class="w-10 h-10 rounded-xl bg-error-container flex items-center justify-center shrink-0 text-on-error-container">
+<span class="material-symbols-outlined text-[22px]">warning</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-error-container text-on-error-container flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">notification_important</span>
+              Wajib Baca &amp; Konfirmasi
+            </span>
+</div>
+<h4 class="font-title-card text-title-card text-on-surface mt-1 leading-snug">SOP Keselamatan Konstruksi K3 Proyek (Rev. 2026)</h4>
+<p class="font-caption text-caption text-secondary mt-0.5">Diperbarui: 10 Nov 2026 • Protokol Lapangan</p>
+</div>
+</div>
+<button class="w-full h-11 rounded-xl bg-primary-container text-on-primary font-body-medium text-table-data font-semibold flex items-center justify-center gap-2 shadow-sm active:scale-95 transition-transform" onclick="openDocumentViewer('SOP K3 Konstruksi Proyek Lapangan (Rev. 2026)')" type="button">
+<span class="material-symbols-outlined text-[18px]">rule</span>
+<span>Buka &amp; Konfirmasi Baca</span>
+</button>
+</div>
+</section>
+<!-- SECTION 5: Sertifikat Pelatihan & Keahlian (Diklat) -->
+<section class="flex flex-col space-y-3" id="section-diklat">
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">workspace_premium</span>
+<h3 class="font-title-card text-title-card text-on-surface">Sertifikat Diklat</h3>
+</div>
+<span class="text-caption font-caption text-secondary">2 Tersimpan</span>
+</div>
+<!-- Certificate 1: K3 BNSP -->
+<div class="rounded-2xl bg-surface-container-lowest p-4 shadow-sm flex flex-col space-y-3">
+<div class="flex items-start justify-between gap-3">
+<div class="w-11 h-11 rounded-xl bg-tertiary-fixed flex items-center justify-center shrink-0 text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-surface-container text-secondary">BNSP Terakreditasi</span>
+</div>
+<h4 class="font-title-card text-title-card text-on-surface mt-1 leading-snug">Sertifikasi K3 Ahli Muda Konstruksi</h4>
+<p class="font-caption text-caption text-secondary mt-0.5">
+            Berlaku s.d. 14 Oktober 2028 • Reg: BNSP-ARF-8891
+          </p>
+</div>
+</div>
+<button class="w-full h-11 rounded-xl bg-surface-container text-on-surface font-body-medium text-table-data font-semibold flex items-center justify-center gap-2 active:scale-95 transition-transform" onclick="triggerDownload('Sertifikat_K3_AhliMuda_BNSP.pdf')" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary-container">file_download</span>
+<span>Unduh Sertifikat PDF</span>
+</button>
+</div>
+<!-- Certificate 2: BIM Architecture -->
+<div class="rounded-2xl bg-surface-container-lowest p-4 shadow-sm flex flex-col space-y-3">
+<div class="flex items-start justify-between gap-3">
+<div class="w-11 h-11 rounded-xl bg-secondary-fixed flex items-center justify-center shrink-0 text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[24px]">military_tech</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-surface-container text-secondary">Autodesk Certified</span>
+</div>
+<h4 class="font-title-card text-title-card text-on-surface mt-1 leading-snug">BIM Architecture Specialist - Level 2</h4>
+<p class="font-caption text-caption text-secondary mt-0.5">
+            Terbit: Agustus 2025 • PT Arifindo Training Academy
+          </p>
+</div>
+</div>
+<button class="w-full h-11 rounded-xl bg-surface-container text-on-surface font-body-medium text-table-data font-semibold flex items-center justify-center gap-2 active:scale-95 transition-transform" onclick="triggerDownload('BIM_Specialist_L2_Arifindo.pdf')" type="button">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span>Unduh Sertifikat PDF</span>
+</button>
+</div>
+</section>
+<!-- Interactive Slide-over / Modal for Preview & Request -->
+<div class="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/50 backdrop-blur-sm hidden transition-opacity" id="generalModal">
+<div class="w-full max-w-md rounded-t-3xl sm:rounded-2xl bg-surface-container-lowest p-5 shadow-2xl flex flex-col space-y-4 animate-in fade-in slide-in-from-bottom duration-200">
+<div class="flex items-center justify-between">
+<h3 class="font-title-card text-title-card text-on-surface" id="modalTitle">Detail Dokumen</h3>
+<button class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-secondary hover:text-on-surface" onclick="closeModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="flex flex-col space-y-3 text-body-default text-on-surface" id="modalBody">
+<!-- Injected via JavaScript -->
+</div>
+<div class="pt-2">
+<button class="w-full h-11 rounded-xl bg-primary-container text-on-primary font-body-medium text-table-data font-semibold flex items-center justify-center" onclick="closeModal()" type="button">
+          Tutup
+        </button>
+</div>
+</div>
+</div>
+<!-- Notification Toast -->
+<div class="fixed bottom-20 left-1/2 -translate-x-1/2 z-50 px-4 py-2.5 rounded-full bg-inverse-surface text-inverse-on-surface text-caption font-caption shadow-lg flex items-center gap-2 opacity-0 pointer-events-none transition-all duration-300" id="toastNotification">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed">check_circle</span>
+<span id="toastMessage">Tindakan berhasil</span>
+</div>
+</div>
+<script>
+  // Mask / Unmask Salary
+  function toggleSalary(elementId, realValue, btn) {
+    const el = document.getElementById(elementId);
+    const icon = btn.querySelector('.material-symbols-outlined');
+    if (!el) return;
+
+    if (el.textContent.includes('••••••••')) {
+      el.textContent = realValue;
+      if (icon) icon.textContent = 'visibility_off';
+    } else {
+      el.textContent = 'Rp ••••••••';
+      if (icon) icon.textContent = 'visibility';
+    }
+  }
+
+  // Toast Helper
+  function showToast(message) {
+    const toast = document.getElementById('toastNotification');
+    const msg = document.getElementById('toastMessage');
+    if (!toast || !msg) return;
+    msg.textContent = message;
+    toast.classList.remove('opacity-0', 'pointer-events-none');
+    toast.classList.add('opacity-100');
+    setTimeout(() => {
+      toast.classList.add('opacity-0', 'pointer-events-none');
+      toast.classList.remove('opacity-100');
+    }, 2800);
+  }
+
+  // Trigger Download Simulation
+  function triggerDownload(fileName) {
+    showToast('Mengunduh: ' + fileName + ' (Tersimpan)');
+  }
+
+  // General Modal Controls
+  function openModal(title, contentHtml) {
+    const modal = document.getElementById('generalModal');
+    const titleEl = document.getElementById('modalTitle');
+    const bodyEl = document.getElementById('modalBody');
+    if (titleEl) titleEl.textContent = title;
+    if (bodyEl) bodyEl.innerHTML = contentHtml;
+    if (modal) modal.classList.remove('hidden');
+  }
+
+  function closeModal() {
+    const modal = document.getElementById('generalModal');
+    if (modal) modal.classList.add('hidden');
+  }
+
+  // Preview Modal for Payslip
+  function openPreviewModal(title, thp, periode) {
+    const content = `
+      <div class="p-3 rounded-xl bg-surface-container-low flex flex-col space-y-2">
+        <div class="flex justify-between items-center text-caption text-secondary">
+          <span>Periode Pembukuan:</span>
+          <span class="font-medium text-on-surface">${periode}</span>
+        </div>
+        <div class="flex justify-between items-center text-caption text-secondary">
+          <span>Gaji Pokok & Lembur:</span>
+          <span class="font-semibold text-on-surface">${thp}</span>
+        </div>
+        <div class="flex justify-between items-center text-caption text-secondary">
+          <span>Potongan BPJS & PPh21:</span>
+          <span class="font-medium text-error">- Rp 684.200</span>
+        </div>
+        <div class="border-t border-surface-dim pt-2 flex justify-between items-center">
+          <span class="font-title-card text-title-card text-on-surface">Total Bersih:</span>
+          <span class="font-title-card text-title-card text-primary-container font-bold">${thp}</span>
+        </div>
+      </div>
+      <p class="text-[12px] text-secondary leading-snug">
+        Dokumen ini telah dienkripsi secara digital dan disahkan oleh Departemen HCGA PT. Arifindo Adiputra Ariaguna.
+      </p>
+    `;
+    openModal(title, content);
+  }
+
+  // Document Policy Viewer
+  function openDocumentViewer(docTitle) {
+    const content = `
+      <div class="p-3 rounded-xl bg-surface-container-low text-secondary text-caption leading-relaxed space-y-2">
+        <p><strong class="text-on-surface">Status Pembacaan:</strong> Membuka berkas kebijakan resmi terintegrasi sistem compliance internal ARIFINDOne.</p>
+        <p>Dengan membaca dan menyetujui dokumen ini, Anda menyatakan memahami tata tertib operasional dan standar keselamatan kerja PT Arifindo Adiputra Ariaguna.</p>
+      </div>
+      <button type="button" onclick="showToast('Konfirmasi baca berhasil dicatat.'); closeModal();" class="w-full h-11 rounded-xl bg-tertiary text-on-tertiary font-body-medium text-table-data font-semibold flex items-center justify-center gap-2">
+        <span class="material-symbols-outlined text-[18px]">verified</span>
+        <span>Konfirmasi Telah Membaca</span>
+      </button>
+    `;
+    openModal(docTitle, content);
+  }
+
+  // Request Letter Action
+  document.getElementById('btnRequestLetter')?.addEventListener('click', function() {
+    const content = `
+      <div class="space-y-3">
+        <div class="flex flex-col gap-1">
+          <label class="text-caption font-caption text-secondary font-medium">Jenis Surat Keterangan:</label>
+          <select class="w-full h-11 px-3 rounded-xl bg-surface-container text-on-surface font-body-default text-table-data focus:outline-none">
+            <option>Surat Keterangan Aktif Bekerja (KPR / Bank)</option>
+            <option>Surat Rekomendasi Visa Kunjungan Bisnis</option>
+            <option>Surat Pengalaman Kerja (Paklaring)</option>
+            <option>Keterangan Penghasilan untuk Lembaga Keuangan</option>
+          </select>
+        </div>
+        <div class="flex flex-col gap-1">
+          <label class="text-caption font-caption text-secondary font-medium">Instansi / Bank Tujuan:</label>
+          <input type="text" placeholder="Contoh: Bank BTN Kantor Cabang Thamrin" class="w-full h-11 px-3 rounded-xl bg-surface-container text-on-surface font-body-default text-table-data placeholder:text-secondary focus:outline-none" />
+        </div>
+        <div class="flex flex-col gap-1">
+          <label class="text-caption font-caption text-secondary font-medium">Catatan Tambahan:</label>
+          <textarea rows="2" placeholder="Tuliskan keperluan khusus jika ada..." class="w-full p-3 rounded-xl bg-surface-container text-on-surface font-body-default text-table-data placeholder:text-secondary focus:outline-none"></textarea>
+        </div>
+        <button type="button" onclick="showToast('Permohonan surat berhasil dikirim ke HCGA.'); closeModal();" class="w-full h-11 rounded-xl bg-primary-container text-on-primary font-body-medium text-table-data font-semibold flex items-center justify-center gap-2">
+          <span class="material-symbols-outlined text-[18px]">send</span>
+          <span>Ajukan Permohonan Sekarang</span>
+        </button>
+      </div>
+    `;
+    openModal('Buat Permohonan Surat Resmi', content);
+  });
+
+  // Tab Filtering & Smooth Scrolling
+  document.querySelectorAll('.tab-pill').forEach(pill => {
+    pill.addEventListener('click', function() {
+      // Style active state
+      document.querySelectorAll('.tab-pill').forEach(p => {
+        p.classList.remove('bg-primary-container', 'text-on-primary');
+        p.classList.add('bg-surface-container-lowest', 'text-secondary');
+      });
+      this.classList.remove('bg-surface-container-lowest', 'text-secondary');
+      this.classList.add('bg-primary-container', 'text-on-primary');
+
+      // Scroll to target section
+      const targetId = this.getAttribute('data-target');
+      const targetEl = document.getElementById(targetId);
+      if (targetEl) {
+        targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  // Live filter search simulation
+  document.getElementById('docSearchInput')?.addEventListener('input', function(e) {
+    const val = e.target.value.toLowerCase();
+    const cards = document.querySelectorAll('section > div.rounded-2xl');
+    cards.forEach(card => {
+      const text = card.textContent.toLowerCase();
+      if (text.includes(val)) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.05)]" data-active-classes="text-primary-container font-semibold"><div class="flex justify-between items-center h-16 px-space-xs"><a class="flex-1 h-full min-w-[44px] flex flex-col items-center justify-center gap-1 text-secondary transition-colors hover:text-on-surface" data-path="beranda" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-caption text-[11px] leading-none">Beranda</span></a><a class="flex-1 h-full min-w-[44px] flex flex-col items-center justify-center gap-1 text-secondary transition-colors hover:text-on-surface" data-path="absensi" href="#"><span class="material-symbols-outlined text-[22px]">schedule</span><span class="font-caption text-[11px] leading-none">Absensi</span></a><a class="flex-1 h-full min-w-[44px] flex flex-col items-center justify-center gap-1 text-secondary transition-colors hover:text-on-surface" data-path="pengajuan" href="#"><span class="material-symbols-outlined text-[22px]">post_add</span><span class="font-caption text-[11px] leading-none">Pengajuan</span></a><a aria-current="page" class="flex-1 h-full min-w-[44px] flex flex-col items-center justify-center gap-1 transition-colors text-primary-container font-semibold" data-path="dokumen-&amp;-slip" href="#"><span class="material-symbols-outlined text-[22px]">description</span><span class="font-caption text-[11px] leading-none">Dokumen</span></a><a class="flex-1 h-full min-w-[44px] flex flex-col items-center justify-center gap-1 text-secondary transition-colors hover:text-on-surface" data-path="profil" href="#"><span class="material-symbols-outlined text-[22px]">person</span><span class="font-caption text-[11px] leading-none">Profil</span></a></div></nav>
+
+</body></html>

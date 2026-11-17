@@ -1,0 +1,6 @@
+{
+  "name": "ARIFINDOne - Employee Self-Service HRIS",
+  "description": "Enterprise HRIS and Employee Self-Service portal for PT Arifindo Adiputra Ariaguna featuring biometric geofence attendance, leave and expense workflows, encrypted payslips, smart employee ID pass, and manager team approvals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

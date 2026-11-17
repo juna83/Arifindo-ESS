@@ -1,0 +1,444 @@
+<!DOCTYPE html><html lang="id" style="width: 390px; height: 1412px; overflow: hidden; position: relative;"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>ARIFINDOne - Employee Self-Service</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Google Fonts: Plus Jakarta Sans & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-primary": "#ffffff",
+            "surface-container-lowest": "#ffffff",
+            "secondary-container": "#d5e3fd",
+            "surface-container": "#edeef0",
+            "primary-container": "#c8102e",
+            "on-tertiary-fixed-variant": "#004e60",
+            "on-tertiary": "#ffffff",
+            "inverse-surface": "#2e3132",
+            "tertiary-fixed": "#b6ebff",
+            "surface-container-low": "#f2f4f6",
+            "on-secondary-fixed-variant": "#3a485c",
+            "on-secondary": "#ffffff",
+            "inverse-primary": "#ffb3b1",
+            "on-surface": "#191c1e",
+            "on-primary-container": "#ffdad8",
+            "on-secondary-fixed": "#0d1c2f",
+            "tertiary": "#005468",
+            "on-tertiary-fixed": "#001f28",
+            "on-secondary-container": "#57657b",
+            "on-error": "#ffffff",
+            "surface-container-highest": "#e1e2e4",
+            "on-tertiary-container": "#b6ebff",
+            "on-surface-variant": "#5c403f",
+            "on-primary-fixed-variant": "#92001c",
+            "secondary-fixed": "#d5e3fd",
+            "on-error-container": "#93000a",
+            "surface-dim": "#d9dadc",
+            "tertiary-fixed-dim": "#82d1ed",
+            "tertiary-container": "#006e87",
+            "outline": "#906f6e",
+            "secondary": "#515f74",
+            "secondary-fixed-dim": "#b9c7e0",
+            "primary-fixed-dim": "#ffb3b1",
+            "on-background": "#191c1e",
+            "on-primary-fixed": "#410007",
+            "surface-tint": "#bf0229",
+            "inverse-on-surface": "#f0f1f3",
+            "error": "#ba1a1a",
+            "surface-variant": "#e1e2e4",
+            "background": "#f8f9fb",
+            "primary": "#c8102e",
+            "surface": "#f8f9fb",
+            "primary-fixed": "#ffdad8",
+            "outline-variant": "#e5bdbb",
+            "surface-container-high": "#e7e8ea",
+            "surface-bright": "#f8f9fb",
+            "error-container": "#ffdad6"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2rem",
+            "gutter": "1.25rem",
+            "gutter-dense": "0.75rem",
+            "margin": "1.5rem",
+            "margin-mobile": "1rem"
+          },
+          "fontFamily": {
+            "display-kpi": ["Plus Jakarta Sans"],
+            "body-default": ["Inter"],
+            "headline-h1-mobile": ["Plus Jakarta Sans"],
+            "label-badge": ["Inter"],
+            "title-card": ["Plus Jakarta Sans"],
+            "body-medium": ["Inter"],
+            "headline-h1": ["Plus Jakarta Sans"],
+            "table-data": ["Inter"],
+            "headline-h2": ["Plus Jakarta Sans"],
+            "caption": ["Inter"],
+            "table-header": ["Inter"]
+          },
+          "fontSize": {
+            "display-kpi": ["32px", { "lineHeight": "40px", "fontWeight": "800" }],
+            "body-default": ["15px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "headline-h1-mobile": ["22px", { "lineHeight": "28px", "fontWeight": "800" }],
+            "label-badge": ["12px", { "lineHeight": "16px", "fontWeight": "600" }],
+            "title-card": ["16px", { "lineHeight": "24px", "fontWeight": "700" }],
+            "body-medium": ["15px", { "lineHeight": "22px", "fontWeight": "500" }],
+            "headline-h1": ["26px", { "lineHeight": "34px", "fontWeight": "800" }],
+            "table-data": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "headline-h2": ["20px", { "lineHeight": "28px", "fontWeight": "700" }],
+            "caption": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+            "table-header": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      font-size: 20px;
+    }
+    .material-symbols-outlined.fill-icon {
+      font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+</head>
+<body class="bg-[#F6F7F9] text-on-surface antialiased font-body-default flex justify-center min-h-screen">
+<!-- Mobile Container (Max 420px responsive centered shell) -->
+<main class="w-full max-w-[420px] bg-[#F6F7F9] min-h-screen pb-28 relative shadow-xl flex flex-col">
+<!-- TopAppBar (From Shared Component Spec) -->
+<header class="sticky top-0 z-40 bg-surface-container-lowest shadow-sm flex justify-between items-center w-full px-margin-mobile py-space-sm border-b border-surface-container">
+<div class="flex items-center gap-2.5">
+<!-- Brand Emblem -->
+<div class="w-8 h-8 rounded-lg overflow-hidden flex items-center justify-center p-0.5 bg-surface-container-lowest">
+<img alt="PT. Arifindo Adiputra Ariaguna Corporate Emblem" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWrlYiFD_Y0_uRDDbUnrZWeKTmF22i7_Kf19ZcE6zeQltvv550Q4prWlMWC9-sXSNDykwu8J1izpTmiSjiZ8TBJz1mjJSOfH7WLf6IMUwcqav6V_ZiFQfhtulYhX3WMoWrViX0mkr2jeGsBO32BtjLaQ0_tDdC5VVQirHja63mWEqySMarjXN20ndA1AZKvYOPtHOTYf-8fPW0TyMN_N1TBC0jUiIxH36LiZgWOmAYbuLxE-6PBNwTXA">
+</div>
+<div>
+<span class="text-headline-h2 font-headline-h2 text-primary font-bold tracking-tight">ARIFINDOne</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5">
+<!-- Notification button with unread badge -->
+<button aria-label="Notifikasi" class="relative p-2 rounded-full hover:bg-surface-container-low transition-colors duration-150 active:scale-95">
+<span class="material-symbols-outlined text-secondary">notifications</span>
+<span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary ring-2 ring-surface-container-lowest"></span>
+</button>
+<!-- Profile quick toggle -->
+<div class="w-8 h-8 rounded-full bg-surface-container-high border border-surface-container flex items-center justify-center text-secondary font-headline-h2 text-xs font-bold active:scale-95 cursor-pointer">
+          BY
+        </div>
+</div>
+</header>
+<!-- Content Canvas -->
+<div class="px-margin-mobile pt-3 space-y-4">
+<!-- Greeting & User Card -->
+<section class="bg-surface-container-lowest border border-surface-container rounded-xl p-4 shadow-sm">
+<div class="flex items-start justify-between">
+<div>
+<div class="flex items-center gap-1.5">
+<h1 class="text-headline-h1-mobile font-headline-h1-mobile text-on-surface">Selamat Pagi, Bayu!</h1>
+<span class="text-lg">👋</span>
+</div>
+<p class="text-caption font-caption text-secondary mt-0.5 font-medium">Site Architect Lead • NIK: ARF-2019-082</p>
+</div>
+<span class="bg-surface-container-low text-secondary text-caption font-caption font-semibold px-2 py-0.5 rounded-full border border-surface-container">
+            Aktif
+          </span>
+</div>
+<div class="mt-3 pt-3 border-t border-surface-container flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">location_city</span>
+<span class="text-caption font-caption text-secondary font-medium truncate">Proyek Grand Arifindo Sidoarjo</span>
+</div>
+</section>
+<!-- Card "Absensi Hari Ini" -->
+<section class="bg-surface-container-lowest border border-surface-container rounded-xl p-4 shadow-sm space-y-3.5">
+<!-- Header & Live Clock -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-lg">calendar_today</span>
+<span class="text-title-card font-title-card text-on-surface text-sm">Kamis, 26 November 2026</span>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container-low px-2 py-1 rounded-md border border-surface-container">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+
+</div>
+</div>
+<!-- Time Status Cards (Side by side) -->
+<div class="grid grid-cols-2 gap-2.5">
+<!-- Jam Masuk -->
+<div class="bg-surface-container-low border border-surface-container rounded-lg p-2.5">
+<div class="flex items-center justify-between mb-1">
+<span class="text-caption font-caption text-secondary flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">login</span></span>
+<span class="bg-emerald-50 text-emerald-700 text-[10px] font-semibold px-1.5 py-0.5 rounded-full border border-emerald-200">
+                Tepat Waktu
+              </span>
+</div>
+<div class="text-title-card font-title-card text-on-surface text-lg font-bold">07:52 <span class="text-caption font-caption text-secondary flex items-center gap-1"></span></div>
+<div class="text-[11px] text-secondary mt-0.5">Jadwal: 08:00 WIB</div>
+</div>
+<!-- Jam Pulang -->
+<div class="bg-surface-container-low border border-surface-container rounded-lg p-2.5">
+<div class="flex items-center justify-between mb-1">
+<span class="text-caption font-caption text-secondary flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">logout</span></span>
+<span class="bg-surface-container text-secondary text-[10px] font-semibold px-1.5 py-0.5 rounded-full">
+                Belum
+              </span>
+</div>
+<div class="text-title-card font-title-card text-secondary text-lg font-bold">--:-- <span class="text-caption font-caption text-secondary flex items-center gap-1"></span></div>
+<div class="text-[11px] text-secondary mt-0.5">Jadwal: 17:00 WIB</div>
+</div>
+</div>
+<!-- Geofence Info -->
+<div class="flex items-start gap-2 bg-[#F8FAFC] border border-surface-container rounded-lg p-2.5">
+<span class="material-symbols-outlined text-emerald-600 mt-0.5">check_circle</span>
+<div class="text-caption font-caption leading-relaxed">
+<p class="font-semibold text-on-surface">Site Grand Arifindo Sidoarjo</p>
+<p class="text-secondary text-[11px]">Radius: 35m / 100m • Di dalam zona presensi proyek</p>
+</div>
+</div>
+<!-- Primary Action Button (Absen Pulang) -->
+<button class="w-full bg-primary hover:bg-[#A50D25] active:bg-[#890B1F] text-on-primary font-headline-h2 text-sm font-bold py-3 px-4 rounded-lg shadow-sm flex items-center justify-center gap-2 transition-all duration-150 active:scale-[0.98]">
+<span class="material-symbols-outlined fill-icon text-lg">fingerprint</span>
+<span>Absen Pulang Sekarang</span>
+</button>
+</section>
+<!-- Quick Action Grid (8 Menu - 4x2) -->
+<section class="bg-surface-container-lowest border border-surface-container rounded-xl p-4 shadow-sm">
+<h2 class="text-title-card font-title-card text-on-surface text-sm mb-3">Layanan Mandiri (ESS)</h2>
+<div class="grid grid-cols-4 gap-3">
+<!-- 1. Cuti -->
+<button class="flex flex-col items-center group active:scale-95 transition-transform duration-150">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low border border-surface-container flex items-center justify-center group-hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-secondary">event_available</span>
+</div>
+<span class="text-caption font-caption font-medium text-on-surface mt-1.5">Cuti</span>
+</button>
+<!-- 2. Lembur -->
+<button class="flex flex-col items-center group active:scale-95 transition-transform duration-150">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low border border-surface-container flex items-center justify-center group-hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-secondary">schedule</span>
+</div>
+<span class="text-caption font-caption font-medium text-on-surface mt-1.5">Lembur</span>
+</button>
+<!-- 3. Klaim -->
+<button class="flex flex-col items-center group active:scale-95 transition-transform duration-150">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low border border-surface-container flex items-center justify-center group-hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-secondary">receipt_long</span>
+</div>
+<span class="text-caption font-caption font-medium text-on-surface mt-1.5">Klaim</span>
+</button>
+<!-- 4. Slip Gaji -->
+<button class="flex flex-col items-center group active:scale-95 transition-transform duration-150">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low border border-surface-container flex items-center justify-center group-hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-secondary">payments</span>
+</div>
+<span class="text-caption font-caption font-medium text-on-surface mt-1.5">Slip Gaji</span>
+</button>
+<!-- 5. KPI -->
+<button class="flex flex-col items-center group active:scale-95 transition-transform duration-150">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low border border-surface-container flex items-center justify-center group-hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-secondary">monitoring</span>
+</div>
+<span class="text-caption font-caption font-medium text-on-surface mt-1.5">KPI</span>
+</button>
+<!-- 6. Tugas -->
+<button class="flex flex-col items-center group active:scale-95 transition-transform duration-150">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low border border-surface-container flex items-center justify-center group-hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-secondary">assignment</span>
+</div>
+<span class="text-caption font-caption font-medium text-on-surface mt-1.5">Tugas</span>
+</button>
+<!-- 7. Aset -->
+<button class="flex flex-col items-center group active:scale-95 transition-transform duration-150">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low border border-surface-container flex items-center justify-center group-hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-secondary">inventory_2</span>
+</div>
+<span class="text-caption font-caption font-medium text-on-surface mt-1.5">Aset</span>
+</button>
+<!-- 8. Training -->
+<button class="flex flex-col items-center group active:scale-95 transition-transform duration-150">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low border border-surface-container flex items-center justify-center group-hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-secondary">school</span>
+</div>
+<span class="text-caption font-caption font-medium text-on-surface mt-1.5">Training</span>
+</button>
+</div>
+</section>
+<!-- Card Pengumuman Perusahaan -->
+<section class="bg-surface-container-lowest border border-surface-container rounded-xl p-4 shadow-sm">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-base">campaign</span>
+<span class="text-title-card font-title-card text-on-surface text-sm">Pengumuman Resmi</span>
+</div>
+<span class="bg-surface-container-low text-secondary border border-surface-container text-[10px] font-bold px-2 py-0.5 rounded-full">
+            Baru
+          </span>
+</div>
+<h3 class="text-body-medium font-body-medium text-on-surface text-sm font-semibold leading-snug">
+          Pemberlakuan SOP K3 Baru &amp; Kebijakan Masa Cuti Bersama Akhir Tahun 2026
+        </h3>
+<p class="text-caption font-caption text-secondary mt-1.5 line-clamp-2 leading-relaxed">
+          Diharapkan seluruh personel kantor pusat dan site proyek membaca dan mengonfirmasi pemahaman dokumen kepatuhan kerja serta jadwal operasional...
+        </p>
+<div class="mt-3 pt-3 border-t border-surface-container flex items-center justify-between">
+<button class="flex items-center gap-1.5 text-caption font-caption font-semibold text-secondary hover:text-on-surface bg-surface-container-low px-3 py-1.5 rounded-lg border border-surface-container transition-colors active:scale-95" id="ack-button" onclick="toggleAck()">
+<span class="material-symbols-outlined text-base" id="ack-icon">check_box_outline_blank</span>
+<span id="ack-text">Saya sudah membaca</span>
+</button>
+<button class="text-caption font-caption font-semibold text-secondary hover:underline flex items-center gap-0.5">
+<span>Detail</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- Card "Pengajuan Saya" -->
+<section class="bg-surface-container-lowest border border-surface-container rounded-xl p-4 shadow-sm">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-base">fact_check</span>
+<h2 class="text-title-card font-title-card text-on-surface text-sm">Pengajuan Saya</h2>
+</div>
+<button class="text-caption font-caption font-semibold text-secondary hover:text-on-surface flex items-center">
+<span>Lihat Semua</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</div>
+<div class="space-y-2.5">
+<!-- Item 1: Cuti Tahunan -->
+<div class="p-2.5 rounded-lg border border-surface-container bg-surface-container-low/40 flex items-center justify-between">
+<div class="flex items-start gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container-lowest border border-surface-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-secondary text-base">event_busy</span>
+</div>
+<div>
+<p class="text-body-medium font-body-medium text-xs font-semibold text-on-surface">Cuti Tahunan (3 Hari)</p>
+<p class="text-caption font-caption text-secondary text-[11px]">02 - 04 Des 2026</p>
+</div>
+</div>
+<span class="bg-amber-50 text-amber-700 border border-amber-200 text-[10px] font-semibold px-2 py-0.5 rounded-full shrink-0">
+              Menunggu Approval HCGA
+            </span>
+</div>
+<!-- Item 2: Reimbursement Transport -->
+<div class="p-2.5 rounded-lg border border-surface-container bg-surface-container-low/40 flex items-center justify-between">
+<div class="flex items-start gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container-lowest border border-surface-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-secondary text-base">receipt</span>
+</div>
+<div>
+<p class="text-body-medium font-body-medium text-xs font-semibold text-on-surface">Reimbursement Transport</p>
+<p class="text-caption font-caption text-secondary text-[11px]">Rp 450.000 • BBM Site Audit</p>
+</div>
+</div>
+<span class="bg-emerald-50 text-emerald-700 border border-emerald-200 text-[10px] font-semibold px-2 py-0.5 rounded-full shrink-0">
+              Disetujui Finance
+            </span>
+</div>
+<!-- Item 3: Peminjaman Alat -->
+<div class="p-2.5 rounded-lg border border-surface-container bg-surface-container-low/40 flex items-center justify-between">
+<div class="flex items-start gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container-lowest border border-surface-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-secondary text-base">handyman</span>
+</div>
+<div>
+<p class="text-body-medium font-body-medium text-xs font-semibold text-on-surface">Alat Ukur Total Station</p>
+<p class="text-caption font-caption text-secondary text-[11px]">Dikembalikan 24 Nov 2026</p>
+</div>
+</div>
+<span class="bg-slate-100 text-slate-700 border border-slate-200 text-[10px] font-semibold px-2 py-0.5 rounded-full shrink-0">
+              Selesai
+            </span>
+</div>
+</div>
+</section>
+</div>
+<!-- BottomNavBar (From Shared Component Spec) -->
+<!-- Fixed bottom navigation bar with 5 items, exact labels, active state on 'Beranda' -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-margin-mobile py-space-xs bg-surface-container-lowest shadow-sm border-t border-surface-container">
+<!-- Beranda (ACTIVE: Primary Brand Red #c8102e) -->
+<button aria-current="page" class="flex flex-col items-center justify-center text-primary font-semibold py-space-xs transition-colors duration-150 active:scale-95">
+<span class="material-symbols-outlined fill-icon" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-caption font-caption mt-0.5">Beranda</span>
+</button>
+<!-- Aktivitas -->
+<button class="flex flex-col items-center justify-center text-secondary py-space-xs hover:text-primary transition-colors duration-150 active:scale-95">
+<span class="material-symbols-outlined">history</span>
+<span class="text-caption font-caption mt-0.5">Aktivitas</span>
+</button>
+<!-- Pengajuan -->
+<button class="flex flex-col items-center justify-center text-secondary py-space-xs hover:text-primary transition-colors duration-150 active:scale-95">
+<span class="material-symbols-outlined">post_add</span>
+<span class="text-caption font-caption mt-0.5">Pengajuan</span>
+</button>
+<!-- Notifikasi -->
+<button class="flex flex-col items-center justify-center text-secondary py-space-xs hover:text-primary transition-colors duration-150 active:scale-95">
+<span class="material-symbols-outlined">notifications</span>
+<span class="text-caption font-caption mt-0.5">Notifikasi</span>
+</button>
+<!-- Profil -->
+<button class="flex flex-col items-center justify-center text-secondary py-space-xs hover:text-primary transition-colors duration-150 active:scale-95">
+<span class="material-symbols-outlined">person</span>
+<span class="text-caption font-caption mt-0.5">Profil</span>
+</button>
+</nav>
+</main>
+<script>
+    // Micro-interaction: Acknowledged button
+    let acknowledged = false;
+    function toggleAck() {
+      acknowledged = !acknowledged;
+      const btn = document.getElementById('ack-button');
+      const icon = document.getElementById('ack-icon');
+      const text = document.getElementById('ack-text');
+
+      if (acknowledged) {
+        icon.innerText = 'check_box';
+        icon.classList.add('text-emerald-600');
+        text.innerText = 'Sudah dikonfirmasi';
+        btn.classList.add('bg-emerald-50', 'border-emerald-200', 'text-emerald-800');
+        btn.classList.remove('bg-surface-container-low', 'border-surface-container', 'text-secondary');
+      } else {
+        icon.innerText = 'check_box_outline_blank';
+        icon.classList.remove('text-emerald-600');
+        text.innerText = 'Saya sudah membaca';
+        btn.classList.remove('bg-emerald-50', 'border-emerald-200', 'text-emerald-800');
+        btn.classList.add('bg-surface-container-low', 'border-surface-container', 'text-secondary');
+      }
+    }
+
+    // Dynamic Live Clock
+    function updateClock() {
+      const now = new Date();
+      const hours = String(now.getHours()).padStart(2, '0');
+      const minutes = String(now.getMinutes()).padStart(2, '0');
+      const seconds = String(now.getSeconds()).padStart(2, '0');
+      const el = document.getElementById('live-timer');
+      if (el) {
+        el.innerText = `${hours}:${minutes}:${seconds} WIB`;
+      }
+    }
+    setInterval(updateClock, 1000);
+  </script>
+
+
+</body></html>
